@@ -1,0 +1,54 @@
+<!-- We are going to study flexbox and grid.
+
+Flexbox - full name - Flexible Box Layout. A 1D CSS layout model designed for arranging items within a container in a 
+flexible and responsive manner. Aligns items space along a single axis(either horizontally as a row or vice versa).
+By default sare items vertical(columns me) hote h. And to change that, we target parent container and display : flex.
+key concepts : 
+1. Flex Container - parent element is display
+2. Flex Items - direct children of a flex container
+3. Main axis - primary axis along which flex items are laid out. eg row column
+4.Cross axis - axis perpendicular to the main axis.
+
+main flexbox properties : 
+display, flex-direction, justify-content, align-items, align-content, flex-wrap etc.
+
+Grid - a 2D layout system that allows for the arrangement of content into rows and columns.
+It provides a powerful and flexible way to create complex and responsive web page layouts.
+key concepts :
+1. Grid Container - parent element with display : grid or inline grid.
+2. Grid Items - direct children of container.
+3. Grid Lines - horizontal & vertical lines defining the structure of grid. They are numbered starting from 1.
+4. Grid Tracks - space b/w 2 grid lines, forming rows and columns of grid
+5. Grid Cells - individual unit of grid. Formed by intersection of a row track and a column track.
+6. Grid Areas - defined using grid-template areas property. It is the named area within the grid.
+
+NOTE : Flexbox is best for 1D layouts whereas Grid is best for 2D layouts(handling row and column simultaneously). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel = "stylesheet" href = "styles4.css">
+</head>
+<body>
+    <h1>Flexbox and Grid in CSS</h1>
+    <!-- phle ek container<div> k andr bnaynge and uske andr bht sare items honge jise flex-items bolenge -->
+        <!-- <div class = "container">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div> -->
+
+        <div class="cont-grid">
+            <div class="grid-items one">1</div>
+            <div class="grid-items two">2</div>
+            <div class="grid-items">3</div>
+            <div class="grid-items">4</div>
+            <div class="grid-items">5</div>
+            <div class="grid-items">6</div>
+        </div>
+    </body>
+</html>

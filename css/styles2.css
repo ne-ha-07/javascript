@@ -1,0 +1,56 @@
+/* Types of selector: type/element, class, id, attribute, pseudo, selector list etc
+Use of Selectors - agr hame alg alg paragraphs me alg style chaiye uske liye selector like id use hoga
+1. This is the example of type/element selector.
+p{
+    color:aquamarine;
+    margin:5px;
+} */
+
+/* 2. To use Class selector start with a dot(.) and write the name of the class that you mentioned in html file 
+class is called an attribute and line1 that we wrote is called as class name.*/
+.line1{
+    color: #ffebcd;
+    background-color: #000000;
+    padding: 10px;
+}
+
+.line2{
+    color:#ffebcd;
+    background-color: #1f0606;
+    padding: 10px;
+}
+
+/* 3. To use id selector use it with a (#) with id name */
+#line3{
+    color: #ffebcd;
+    background-color: #4e2121;
+    padding: 10px;
+}
+
+/*Note : the difference between class and id is that an id is used only when we have to uniquely identify a particular elememt. */
+
+/*4.  Attribute Selector - jo attribute use kra h vo likh kr ek square bracket[] and uske andr attribute name*/
+/* Note: input likhne k bd space ni dena bilkul bhi otherwise it won't work */
+input[type="text"]{
+    color: #000000;
+    background-color: #ecc9cf;
+    padding:10px;
+    margin: 5px;
+}
+
+/* 5. Pseudo Selector*/
+/* button:hover ka mtlb h jb bhi cursor button k upr jayga it hovers and hover krne pr button ka color change krega */
+button:hover{
+    color:#000000;
+    background-color: #800080;
+    padding: 5px;
+    margin: 1px;
+    border: 2px solid #000000;  /*solid ki jgh dotted, dashed bhi use krskte. It simply means ki border kesa hoga dotted or not*/
+}
+
+/* 6. Selector list - html page pr definition h */
+
+h2,p{
+    color: #ffffff;
+    background-color: #ffa500;
+}

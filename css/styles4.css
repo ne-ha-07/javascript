@@ -1,0 +1,41 @@
+.container{
+    display: flex;  /* makes the element display in a row*/
+    flex-direction: row;  /* there are more properties like reverse jo elements ko reverse krdega like 4 3 2 1*/
+    justify-content: center; /* justify-content if for the rows only and is the space b/w elements & center - for elements
+    in the center of the page. There are more like space-between, space-evenly, space-around etc.*/
+    /* if flex-direction : column , then for the space between the elements we use 
+    align-items : center */
+    gap: 20px 10px; /* gap : column row. Works exactly like margin for the boxes*/   
+}
+
+.box{
+    height : 100px;
+    width : 125px;
+    border : 1px solid #000000;
+    text-align : center;
+}
+
+.cont-grid{
+    display: grid;
+    grid-template-columns:250px 250px  250px; /*sirf 2br 250 likha h iska mtlb 3 columns m divide hojynge items with 250px gap b/w them, basically adds space b/w elements of the row */
+    /*if grid-template-columns: 1fr 1fr -> this will divide the screen into two 2 equal columns(2 equal fractional units)
+    or you can also write auto auto -> does the same thing as fr. And instead of writing auto twice, you can write repeat(2, auto) -> 2 is twice and auto-> which neds to be repeated*/
+    /* grid-template-rows: 200px 200px; ye decide krta h ki columns ki height kitni hogi, basically adds space b/w elements of the column */
+    border: 2px solid #ecec2a; /* will cover all the grid items*/
+    gap : 10px 10px;  /* gap : column  row -- combined form of row-gap and column-gap
+    row-gap: 10px; /*adds space/gap between rows
+    column-gap: 10px; /*adds space/gap between columns*/
+}
+.grid-items{
+    height: 100px;
+    width: 100px;
+    border : 2px solid #0000ff;
+}
+.one{
+    grid-column-start: 1;
+    grid-column-end:3 ;
+}
+.two{
+    grid-row-start:2 ;
+    grid-row-end: 4 ;
+}

@@ -1,0 +1,41 @@
+/* We studied simple styling and Text decoration in this */
+h1{
+    color: #f0f8ff;
+    text-decoration: underline;
+}
+.styling{
+    color : #722323;
+    background-color : #e6e6a6;
+    margin: 10px;
+    /* padding-top: 50px; /* padding only top se hogi*/
+    /*padding-bottom : 50px;
+    padding-left: 100px;
+    padding-right: 10px; */
+    /* in sbka mila kr short me ek padding ka use krskte h .look how ? padding : top right bottom left ( Clock-wise )*/
+
+    padding : 20px 30px 20px 100px;
+/* 
+    border-width: 10px;
+    border-style: solid;
+    border-color: red; */
+    /* in short use - border : width stylee(solid, dotted, dashed) color . Also in clockwise direction always.*/
+    border : 5px solid #000000 ;
+
+}
+body{
+    background-image: url(https://media.wired.com/photos/65e9c10d9f97337a36c5bd27/3:2/w_1600,c_limit/GettyImages-1176555906.jpg);
+}
+
+/* Text decoration */
+.txt{
+    color:#f0f8ff;
+    text-decoration: underline;  /*There are many more like line-through/strike-through*/
+    text-transform: capitalize;  /* capitalizes the entire text*/
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;  /* pixels m bhi use krskte h. for eg. 200px OR small medium large xxlarge and so on*/
+    font-style: italic;
+    font-weight: 400;/*font-weight is apka font kitna bold h. Max is 900 min is 0. you can write bold instead of 900*/
+    line-height: 75px;  /* ek txet jis line m likha h uski line ka height. just like in hindi notebooks we have a line to write.*/
+    
+}

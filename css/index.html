@@ -1,0 +1,45 @@
+<!-- linking css to html file has 3 ways :
+ 1. inline -> jo kisi paragraph ya heading m dala ja skta h
+ 2. internal -> jo head section m style tag k andr likhte h
+ 3. external -> ek external .css ki file ki link, html ke head section m daal dete h.
+
+ priority order - if all 3 of them are written in a same html file.
+ the priority of execution will be : inline > internal > extrenal
+ 
+ margin - space bahr se
+ padding - space andr se 
+ hexcode - a code for the color in css. eg.: dfdf2b (for a shade of yellow color)
+ Q. why we use hexcode? ans - because directly using a solid color (like yellow) can be a different shade of yellow for 
+ another browser. But hexcode is same for every browser.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- Internal Css -->
+    <!-- <style>
+        p{
+            background-color : #dfdf2b;
+            color : #ee1818;
+            margin : 50px;
+            padding: 10px;
+        }
+    </style> -->
+
+    <!-- External Css -->
+     <link rel = "stylesheet" href="styles1.css">
+</head>
+<body>
+    <!-- <h3>1. Inline Css!</h3>
+    <p style = "background-color: yellow; color: blue; margin:50px; padding: 10px;">Lorem ipsum dolor sit amet consectetur elit.</p>
+    
+    <h4>2. Internal Css!</h4>
+    <p>Lorem ipsum dolor sit amet.</p> -->
+
+    <h4>3. External Css!</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+</body>
+</html>
